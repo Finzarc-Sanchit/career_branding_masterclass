@@ -1,13 +1,13 @@
 
 import React, { useEffect } from 'react';
-import { 
-  ArrowRight, 
-  CheckCircle2, 
-  ChevronRight, 
-  Users, 
-  Target, 
-  ShieldCheck, 
-  TrendingUp, 
+import {
+  ArrowRight,
+  CheckCircle2,
+  ChevronRight,
+  Users,
+  Target,
+  ShieldCheck,
+  TrendingUp,
   ArrowUpRight,
   Menu,
   X,
@@ -28,10 +28,14 @@ import Transformation from './components/Transformation';
 import LearningOutcomes from './components/LearningOutcomes';
 import Qualification from './components/Qualification';
 import AboutCoach from './components/AboutCoach';
+import LeadGenerationForm from './components/LeadGenerationForm';
 import CTAOffer from './components/CTAOffer';
 import Footer from './components/Footer';
+import { FormDialogProvider, useFormDialog } from './contexts/FormDialogContext';
 
-function App() {
+function AppContent() {
+  const { isOpen, closeDialog } = useFormDialog();
+
   // Simple scroll reveal effect
   useEffect(() => {
     const observerOptions = {
@@ -68,7 +72,16 @@ function App() {
         <CTAOffer />
       </main>
       <Footer />
+      <LeadGenerationForm isOpen={isOpen} onClose={closeDialog} />
     </div>
+  );
+}
+
+function App() {
+  return (
+    <FormDialogProvider>
+      <AppContent />
+    </FormDialogProvider>
   );
 }
 

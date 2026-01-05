@@ -1,8 +1,10 @@
 
 import React from 'react';
 import { Calendar, Clock, ArrowRight, ShieldCheck } from 'lucide-react';
+import { useFormDialog } from '../contexts/FormDialogContext';
 
 const CTAOffer: React.FC = () => {
+  const { openDialog } = useFormDialog();
   return (
     <section id="cta" className="py-32 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
@@ -48,7 +50,10 @@ const CTAOffer: React.FC = () => {
                 <p className="text-white text-5xl font-bold tracking-tighter">₹999 <span className="text-lg font-normal text-white/40">only</span></p>
               </div>
 
-              <button className="group relative bg-accent text-white px-12 py-6 rounded-full font-bold text-xl flex items-center justify-center gap-3 hover:bg-[#E55930] transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-accent/20">
+              <button 
+                onClick={openDialog}
+                className="group relative bg-accent text-white px-12 py-6 rounded-full font-bold text-xl flex items-center justify-center gap-3 hover:bg-[#E55930] transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-accent/20"
+              >
                 Secure Your Spot Now
                 <ArrowRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
               </button>

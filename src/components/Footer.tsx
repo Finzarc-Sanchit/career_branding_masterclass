@@ -9,9 +9,9 @@ const Footer: React.FC = () => {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-6">
               <div className="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-sm">AM</span>
+                <span className="text-white font-bold text-sm">SC</span>
               </div>
-              <span className="font-bold text-xl tracking-tight text-charcoal">ARJUN MEHTA</span>
+              <span className="font-bold text-xl tracking-tight text-charcoal">SAKSHI CHANDRAAKAR</span>
             </div>
             <p className="text-body max-w-xs mb-8">
               Helping high-performing professionals become high-value authorities using the 5 Capitals Framework.
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
             <h4 className="font-bold text-charcoal mb-6">Explore</h4>
             <ul className="space-y-4">
               <li><a href="#framework" className="text-body hover:text-accent transition-colors">Framework</a></li>
-              <li><a href="#about" className="text-body hover:text-accent transition-colors">About Arjun</a></li>
+              <li><a href="#about" className="text-body hover:text-accent transition-colors">About Sakshi</a></li>
               <li><a href="#cta" className="text-body hover:text-accent transition-colors">Masterclass</a></li>
             </ul>
           </div>
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
             Two paths lie ahead. One leads to safety. The other leads to growth.
           </p>
           <p className="text-muted text-sm font-medium">
-            © 2024 Arjun Mehta. All rights reserved.
+            © 2024 Sakshi Chandraakar. All rights reserved.
           </p>
         </div>
       </div>

@@ -34,11 +34,11 @@ const Transformation: React.FC = () => {
             <div className="bg-white/40 backdrop-blur-xl border border-white/40 p-10 rounded-[2.5rem] reveal shadow-2xl">
               <div className="space-y-8">
                 <div className="pb-8 border-b border-charcoal/5">
-                  <div className="text-xs font-bold text-accent uppercase tracking-tighter mb-4">Before Arjun</div>
+                  <div className="text-xs font-bold text-accent uppercase tracking-tighter mb-4">Before Sakshi</div>
                   <p className="text-charcoal/70 italic">"I was hoping my performance reviews would finally show my worth. I stayed quiet and did the work, hoping to be noticed."</p>
                 </div>
                 <div>
-                  <div className="text-xs font-bold text-accent uppercase tracking-tighter mb-4">After Arjun</div>
+                  <div className="text-xs font-bold text-accent uppercase tracking-tighter mb-4">After Sakshi</div>
                   <p className="text-charcoal font-bold text-xl leading-snug">"I restructured my positioning. I stopped applying for jobs and started being 'poached'. My income jumped from 32L to 52L in 6 months."</p>
                   <div className="mt-6 flex items-center gap-3">
                     <div className="w-10 h-10 bg-charcoal rounded-full flex items-center justify-center">

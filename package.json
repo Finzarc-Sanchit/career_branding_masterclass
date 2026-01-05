@@ -1,5 +1,5 @@
 {
-  "name": "arjun-mehta-|-career-branding-coach",
+  "name": "sakshi-chandraakar-|-career-branding-coach",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,9 +9,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@radix-ui/react-accordion": "^1.2.12",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.27",
+    "lucide-react": "^0.562.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "lucide-react": "^0.562.0"
+    "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
